@@ -1,0 +1,92 @@
+Scoring Results 
+
+"Torture the data, and it will confess to anything. — Ronald Coase"
+___
+
+BASELINE A - No data removed:
+GaussianNB	 Train Accuracy Score (mean): 0.79234 (std): +/- 0.005908
+LogRegress	 Train Accuracy Score (mean): 0.795455 (std): +/- 0.003626
+LinearDiscr	 Train Accuracy Score (mean): 0.840208 (std): +/- 0.005465
+KNeighborsClf	 Train Accuracy Score (mean): 0.771281 (std): +/- 0.005582
+DecisionTreeClf	 Train Accuracy Score (mean): 0.811294 (std): +/- 0.009567
+RandomForestClf	 Train Accuracy Score (mean): 0.84249 (std): +/- 0.005775
+AdaBoostClf	 Train Accuracy Score (mean): 0.858504 (std): +/- 0.005939
+GradBoostClf	 Train Accuracy Score (mean): 0.864734 (std): +/- 0.005656
+XGBClassifier	 Train Accuracy Score (mean): 0.863374 (std): +/- 0.004864
+
+BASELINE A - No data removed: (Imputed catg vars)
+GaussianNB	 Train Accuracy Score (mean): 0.795259 (std): +/- 0.008828
+LogRegress	 Train Accuracy Score (mean): 0.797146 (std): +/- 0.006893
+LinearDiscr	 Train Accuracy Score (mean): 0.840088 (std): +/- 0.005365
+KNeighborsClf	 Train Accuracy Score (mean): 0.77462 (std): +/- 0.007582
+DecisionTreeClf	 Train Accuracy Score (mean): 0.821822 (std): +/- 0.005706
+RandomForestClf	 Train Accuracy Score (mean): 0.848211 (std): +/- 0.006995
+AdaBoostClf	 Train Accuracy Score (mean): 0.857871 (std): +/- 0.003758
+GradBoostClf	 Train Accuracy Score (mean): 0.865336 (std): +/- 0.0046
+XGBClassifier	 Train Accuracy Score (mean): 0.863579 (std): +/- 0.005125
+
+
+BASELINE B - Remove Dups and '?' rows:
+GaussianNB	 Train Accuracy Score (mean): 0.789591 (std): +/- 0.008392
+LogRegress	 Train Accuracy Score (mean): 0.792198 (std): +/- 0.007592
+LinearDiscr	 Train Accuracy Score (mean): 0.836848 (std): +/- 0.007856
+KNeighborsClf	 Train Accuracy Score (mean): 0.768639 (std): +/- 0.008352
+DecisionTreeClf	 Train Accuracy Score (mean): 0.80765 (std): +/- 0.009858
+RandomForestClf	 Train Accuracy Score (mean): 0.839312 (std): +/- 0.009586
+AdaBoostClf	 Train Accuracy Score (mean): 0.853674 (std): +/- 0.011636
+GradBoostClf	 Train Accuracy Score (mean): 0.859647 (std): +/- 0.011015
+XGBClassifier	 Train Accuracy Score (mean): 0.859079 (std): +/- 0.011326
+
+BASELINE C - Remove Dups:
+GaussianNB	 Train Accuracy Score (mean): 0.795259 (std): +/- 0.008828
+LogRegress	 Train Accuracy Score (mean): 0.796576 (std): +/- 0.007152
+LinearDiscr	 Train Accuracy Score (mean): 0.841493 (std): +/- 0.005193
+KNeighborsClf	 Train Accuracy Score (mean): 0.774708 (std): +/- 0.007625
+DecisionTreeClf	 Train Accuracy Score (mean): 0.819451 (std): +/- 0.00734
+RandomForestClf	 Train Accuracy Score (mean): 0.84922 (std): +/- 0.003873
+AdaBoostClf	 Train Accuracy Score (mean): 0.857432 (std): +/- 0.003889
+GradBoostClf	 Train Accuracy Score (mean): 0.865292 (std): +/- 0.004556
+XGBClassifier	 Train Accuracy Score (mean): 0.863009 (std): +/- 0.004929
+
+
+MODEL -1 - scaler, remove dups, UNK:
+LinearDiscr	 Test Accuracy Score: 0.838865 	 Train Accuracy Score: 0.842942
+RandomForestClf	 Test Accuracy Score: 0.841938 	 Train Accuracy Score: 0.988013
+AdaBoostClf	 Test Accuracy Score: 0.862528 	 Train Accuracy Score: 0.860549
+GradBoostClf	 Test Accuracy Score: 0.866216 	 Train Accuracy Score: 0.870692
+XGBClassifier	 Test Accuracy Score: 0.864372 	 Train Accuracy Score: 0.866784
+
+(Imputed catg vars)
+LinearDiscr	 Test Accuracy Score: 0.837738 	 Train Accuracy Score: 0.841844
+RandomForestClf	 Test Accuracy Score: 0.843372 	 Train Accuracy Score: 0.987662
+AdaBoostClf	 Test Accuracy Score: 0.861299 	 Train Accuracy Score: 0.860329
+GradBoostClf	 Test Accuracy Score: 0.865499 	 Train Accuracy Score: 0.870165
+XGBClassifier	 Test Accuracy Score: 0.864679 	 Train Accuracy Score: 0.866915
+
+MODEL -1 - mms, remove dups, UNK:
+LinearDiscr	 Test Accuracy Score: 0.838865 	 Train Accuracy Score: 0.842942
+RandomForestClf	 Test Accuracy Score: 0.846036 	 Train Accuracy Score: 0.987311
+AdaBoostClf	 Test Accuracy Score: 0.862528 	 Train Accuracy Score: 0.860549
+GradBoostClf	 Test Accuracy Score: 0.866523 	 Train Accuracy Score: 0.870955
+XGBClassifier	 Test Accuracy Score: 0.864372 	 Train Accuracy Score: 0.866784
+
+(Imputed catg vars)
+LinearDiscr	 Test Accuracy Score: 0.837738 	 Train Accuracy Score: 0.841844
+RandomForestClf	 Test Accuracy Score: 0.847572 	 Train Accuracy Score: 0.986784
+AdaBoostClf	 Test Accuracy Score: 0.861299 	 Train Accuracy Score: 0.860329
+GradBoostClf	 Test Accuracy Score: 0.86724 	 Train Accuracy Score: 0.870692 *
+XGBClassifier	 Test Accuracy Score: 0.864679 	 Train Accuracy Score: 0.866915
+
+MODEL -1 - rs,remove dups, UNK:
+LinearDiscr	 Test Accuracy Score: 0.838865 	 Train Accuracy Score: 0.842942
+RandomForestClf	 Test Accuracy Score: 0.848699 	 Train Accuracy Score: 0.988408
+AdaBoostClf	 Test Accuracy Score: 0.862528 	 Train Accuracy Score: 0.860549
+GradBoostClf	 Test Accuracy Score: 0.865909 	 Train Accuracy Score: 0.870472
+XGBClassifier	 Test Accuracy Score: 0.864372 	 Train Accuracy Score: 0.866784
+
+(Imputed catg vars)
+LinearDiscr	 Test Accuracy Score: 0.837738 	 Train Accuracy Score: 0.841844 *
+RandomForestClf	 Test Accuracy Score: 0.849723 	 Train Accuracy Score: 0.986081 *
+AdaBoostClf	 Test Accuracy Score: 0.861299 	 Train Accuracy Score: 0.860329 *
+GradBoostClf	 Test Accuracy Score: 0.865806 	 Train Accuracy Score: 0.870077
+XGBClassifier	 Test Accuracy Score: 0.864679 	 Train Accuracy Score: 0.866915 *
